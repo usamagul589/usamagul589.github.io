@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACCOUNT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+         <a href="index.html"> <img src="images/logo.png" alt="logo" width="125px;" /></a>
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="login-page.html">ACCOUNT</a></li>
+          </ul>
+        </nav>
+        <a href="cart-page.html"><img src="images/cart.png" width="25px" height="25px"/></a>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <!-----------------------------------accont--------------->
+    <div class="accont-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/image1.png" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Login</span>
+                <span onclick="register()">Register </span>
+                <hr id="indcater" />
+              </div>
+              <form id="loginform">
+                <input type="text" placeholder="username" />
+                <input type="password" placeholder="password" />
+                <button type="submit" class="btn">Login</button>
+                <a href="#">forgot password</a>
+              </form>
+              <form id="regform">
+                <input type="text" placeholder="username" />
+                <input type="email" placeholder="email" />
+                <input type="password" placeholder="password" />
+                <button type="submit" class="btn">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="small-container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="images/logo-white.png" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus modi delectus fuga hic vero suscipit quasi! Possimus
+              dolor quos nisi ducimus, unde culpa velit quasi cum, iusto animi
+              aliquam itaque.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h2>useful links</h2>
+            <ul>
+              <li>coupons</li>
+              <li>return policy</li>
+              <li>blog post</li>
+              <li>join affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h2>follow us</h2>
+            <ul>
+              <li>facebook</li>
+              <li>twitter</li>
+              <li>instagram</li>
+              <li>yotube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">copyrigth red-store</p>
+      </div>
+    </div>
+    <!----------------javasript for togglemenu--------------->
+    <script>
+      var menuitems = document.getElementById("menuitems");
+
+      menuitems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "200px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+    <!------------------------login form js---------------------------->
+    <script>
+      var loginform = document.getElementById("loginform");
+      var regform = document.getElementById("regform");
+      var indcater = document.getElementById("indcater");
+      function register() {
+        regform.style.transform = "translateX(0px)";
+        loginform.style.transform = "translateX(0px)";
+        indcater.style.transform = "translateX(100px)";
+      }
+      function login() {
+        regform.style.transform = "translateX(300px)";
+        loginform.style.transform = "translateX(300px)";
+        indcater.style.transform = "translateX(0px)";
+      }
+    </script>
+  </body>
+</html>

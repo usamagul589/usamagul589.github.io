@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart-info</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+         <a href="index.html"> <img src="images/logo.png" alt="logo" width="125px;" /></a>
+        </div>
+        <nav>
+          <ul id="menuitems">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="login-page.html">ACCOUNT</a></li>
+          </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+      </div>
+    </div>
+    <!-----------------------------------cart items------------->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>product</th>
+          <th>quantity</th>
+          <th>subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-1.jpg" />
+            </div>
+            <div>
+              <p>Red printed T-shirt</p>
+              <small>RS= 1000</small><br />
+              <a href="#">Remove</a>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>RS1000</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-2.jpg" />
+            </div>
+            <div>
+              <p>Red printed T-shirt</p>
+              <small>RS=3000</small><br />
+              <a href="#">Remove</a>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>RS1000</td>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="images/buy-3.jpg" />
+            </div>
+            <div>
+              <p>Red printed T-shirt</p>
+              <small>RS=5000</small><br />
+              <a href="#">Remove</a>
+            </div>
+          </td>
+          <td><input type="number" value="1" /></td>
+          <td>RS1000</td>
+        </tr>
+      </table>
+      <div class="tottle">
+        <table>
+          <tr>
+            <td>subtottle</td>
+            <td>Rs=9000</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td>Rs=500</td>
+          </tr>
+          <tr>
+            <td>Tottle</td>
+            <td>9500</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="small-container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="images/logo-white.png" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus modi delectus fuga hic vero suscipit quasi! Possimus
+              dolor quos nisi ducimus, unde culpa velit quasi cum, iusto animi
+              aliquam itaque.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h2>useful links</h2>
+            <ul>
+              <li>coupons</li>
+              <li>return policy</li>
+              <li>blog post</li>
+              <li>join affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h2>follow us</h2>
+            <ul>
+              <li>facebook</li>
+              <li>twitter</li>
+              <li>instagram</li>
+              <li>yotube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">copyrigth red-store</p>
+      </div>
+    </div>
+    <!----------------javasript for togglemenu--------------->
+    <script>
+      var menuitems = document.getElementById("menuitems");
+
+      menuitems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "200px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

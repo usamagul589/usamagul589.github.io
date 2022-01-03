@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All products</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="logo" width="125px;" /></a>
+          </div>
+          <nav>
+            <ul id="menuitems">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="product.html">PRODUCT</a></li>
+              <li><a href="#">CONTACT</a></li>
+              <li><a href="login-page.html">ACCOUNT</a></li>
+            </ul>
+          </nav>
+          <a href="cart-page.html"><img src="images/cart.png" width="25px" height="25px"/></a>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+        </div>
+        <div class="small-container">
+            <div class="row row-2">
+              <h2>All prodcuts</h2>
+              <select>
+                <option>default sorting</option>
+                <option>sort by price</option>
+                <option>sort by rating</option>
+                <option>sort by sale</option>
+              </select>
+            </div>
+            <div class="row">
+              <div class="col-4">
+               <a href="product-detail.html"> <img src="images/product-1.jpg" /></a>
+                <h4>Red T-shirt</h4>
+                <p>price = RS1000</p>
+              </div>
+    
+              <div class="col-4">
+                <img src="images/product-2.jpg" />
+                <h4>black berry shoes</h4>
+                <p>price = RS11000</p>
+              </div>
+              <div class="col-4">
+                <img src="images/product-3.jpg" />
+                <h4>puma trouser</h4>
+                <p>price = RS12000</p>
+              </div>
+              <div class="col-4">
+                <img src="images/product-4.jpg" />
+                <h4>puma black T-shirt</h4>
+                <p>price = RS1000</p>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                  <img src="images/product-5.jpg" />
+                  <h4>Red T-shirt</h4>
+                  <p>price = RS1000</p>
+                </div>
+        
+                <div class="col-4">
+                  <img src="images/product-6.jpg" />
+                  <h4>black berry shoes</h4>
+                  <p>price = RS11000</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/product-7.jpg" />
+                  <h4>puma trouser</h4>
+                  <p>price = RS12000</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/product-8.jpg" />
+                  <h4>puma black T-shirt</h4>
+                  <p>price = RS1000</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/product-9.jpg" />
+                  <h4>Red T-shirt</h4>
+                  <p>price = RS1000</p>
+                </div>
+        
+                <div class="col-4">
+                  <img src="images/product-10.jpg" />
+                  <h4>black berry shoes</h4>
+                  <p>price = RS11000</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/product-11.jpg" />
+                  <h4>puma trouser</h4>
+                  <p>price = RS12000</p>
+                </div>
+                <div class="col-4">
+                  <img src="images/product-12.jpg" />
+                  <h4>puma black T-shirt</h4>
+                  <p>price = RS1000</p>
+                </div>
+              
+          </div>
+          <div class="page-btn">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+              <span>4</span>
+              <span>&#8594</span>
+          </div>
+        </div>
+        
+    
+    <div class="footer">
+      <div class="small-container">
+        <div class="row">
+          <div class="footer-col-1">
+            <img src="images/logo-white.png" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus modi delectus fuga hic vero suscipit quasi! Possimus
+              dolor quos nisi ducimus, unde culpa velit quasi cum, iusto animi
+              aliquam itaque.
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h2>useful links</h2>
+            <ul>
+              <li>coupons</li>
+              <li>return policy</li>
+              <li>blog post</li>
+              <li>join affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h2>follow us</h2>
+            <ul>
+              <li>facebook</li>
+              <li>twitter</li>
+              <li>instagram</li>
+              <li>yotube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">copyrigth red-store</p>
+      </div>
+    </div>
+    <!----------------javasript for togglemenu--------------->
+    <script>
+      var menuitems = document.getElementById("menuitems");
+
+      menuitems.style.maxHeight = "0px";
+      function menutoggle()
+      {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "200px";
+        } 
+        else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+        
+      
+    </script>
+  </body>
+</html>
